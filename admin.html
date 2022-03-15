@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<!--    <script src="adminScript.js" defer></script>-->
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+    <a href="#question" target="_self" class="header-link">Создать вопрос</a>
+    <a href="quiz.html" target="_self" class="header-link">Создать тест</a>
+    <a href="quiz.html" target="_self" class="header-link">Создать задачу</a>
+</header>
+<div class="wrapper-admin">
+    <div class="add-question" id="question">
+        <input type="text" placeholder="Введите вопрос" class="make-question">
+        <select>
+            <option>общая</option>
+            <option>динамика</option>
+            <option>пенициллин</option>
+            <option>аминогликозиды</option>
+        </select>
+        <input type="text" placeholder="Введите вариант ответа" class="make-variant"><br>
+        <input type="checkbox" class="margin">Правильный вариант</input><br>
+        <button class="add-more-variant">Добавить вариант</button>
+    </div>
+    <div class="add-test">
+        <input type="text" placeholder="Введите название теста" class="make-question">
+        <br>
+        <input type="number" class="add-more-variant" placeholder="кол-во вопросов">
+        <br>
+        <select>
+            <option>общая</option>
+            <option>динамика</option>
+            <option>пенициллин</option>
+            <option>аминогликозиды</option>
+        </select>
+    </div>
+    <div class="add-task">
+        <input type="text" placeholder="Введите название задачи" class="make-question">
+        <input type="text" placeholder="Введите название блока" class="make-question">
+        <textarea name="" id="" cols="93" rows="15" placeholder="введите текст блока"></textarea>
+        <br>
+        <button class="done">Готово</button>
+
+    </div>
+
+
+</div>
+
+</body>
+</html>

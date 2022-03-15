@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz</title>
+    <script defer src="script.js"></script>
+    
+</head>
+<body>
+<header class="header">
+    <a href="index.html" target="_self" class="header-link">Главная</a>
+    <a href="mainPage.html" target="_self" class="header-link">Задачи</a>
+    <a href="quiz.html" target="_self" class="header-link">Тесты</a>
+</header>
+<div class="cont">
+    <div class="aside">
+        <details class="details-lvl1" >
+            <summary>Факультет/Специальность</summary>
+            <details class="details-lvl2">
+                <summary>лечебный </summary>
+                <button onclick="setThemeFunc(common)">общая</button>
+                <button onclick="setThemeFunc(dynamic)">динамика</button>
+                <button onclick="setThemeFunc(penicillin)">пенициллин</button>
+                <button onclick="setThemeFunc(aminoglycoside)">аминогликозиды</button>
+            </details>
+            <details class="details-lvl2">
+                <summary>стоматологический</summary>
+                <button>общая</button>
+                <button>динамика</button>
+                <button>пенициллин</button>
+                <button>аминогликозиды</button>
+            </details>
+            <details class="details-lvl2">
+                <summary>педиатрический</summary>
+                <button>общая</button>
+                <button>динамика</button>
+                <button>пенициллин</button>
+                <button>аминогликозиды</button>
+            </details>
+            <details class="details-lvl2">
+                <summary>фармакологический</summary>
+                <button>общая</button>
+                <button>динамика</button>
+                <button>пенициллин</button>
+                <button>аминогликозиды</button>
+            </details>
+            <details class="details-lvl2">
+                <summary>медицинская биохимия</summary>
+                <button>общая</button>
+                <button>динамика</button>
+                <button>пенициллин</button>
+                <button>аминогликозиды</button>
+            </details>
+            <details class="details-lvl2">
+                <summary>иностранный</summary>
+                <button>общая</button>
+                <button>динамика</button>
+                <button>пенициллин</button>
+                <button>аминогликозиды</button>
+            </details>
+        </details>
+    </div>
+    <div style="width: 100%"><div class="indicators-container"></div>
+        <div class="quiz-container"></div>
+        <div class="question-container">
+            <p class="question"></p>
+            <button class="button quiz-btn" id="btn1" onclick="new Quiz().checkAnswers('answer1')"></button>
+            <button class="button quiz-btn" id="btn2" onclick="new Quiz().checkAnswers('answer2')"></button>
+            <button class="button quiz-btn" id="btn3" onclick="new Quiz().checkAnswers('answer3')"></button>
+            <button class="button quiz-btn" id="btn4" onclick="new Quiz().checkAnswers('answer4')"></button>
+            <button class="button quiz-btn" id="btn5" onclick="new Quiz().checkAnswers('answer5')"></button>
+            <button class="button quiz-btn" id="btn6" onclick="new Quiz().checkAnswers('answer6')"></button>
+            <button class="button quiz-btn" id="btn7" onclick="new Quiz().checkAnswers('answer7')"></button>
+            <button class="button quiz-btn" id="btn8" onclick="new Quiz().checkAnswers('answer8')"></button>
+            <button class="next-btn next-btn-pos" onclick="new Quiz().nextQuestion()">Ответить</button>
+            <div class="modal">
+                <div class="modal-message">
+
+                </div>
+            </div>
+        </div></div>
+
+
+</div>
+
+
+</body>
+</html>
